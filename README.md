@@ -66,4 +66,3 @@ build/core-tests
 | `docs/` | 无框架、无外部运行依赖的 GitHub Pages 下载主页 |
 | `scripts/` | 构建、资源打包与 DMG 生成 |
 
-本地预览主页：`python3 -m http.server 4173 --directory docs`，再打开 `http://127.0.0.1:4173`。主页里的文档内容为交互示例，不读取访客的文件或剪贴板。
