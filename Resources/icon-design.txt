@@ -1,0 +1,4 @@
+Generated with the built-in imagegen tool, not the CLI. Original image copied into Resources/AppIcon.png and converted to a macOS multi-resolution AppIcon.icns using sips and iconutil.
+
+Prompt:
+Use case: logo-brand. Asset type: original macOS app icon for a local Markdown writing application named 免费版md. Create one polished 1024x1024 icon: a softly rounded square of deep forest teal, a warm ivory folded document floating in the center, with a bold simple dark teal Markdown M mark and a small copper-orange downward arrow aligned beside it. Beautiful precise geometric shapes, subtle dimensional bevels and soft shadow, crisp legible at 32px. Calm premium editorial utility app, distinctive and minimal. Transparent background outside rounded square, plenty of safe margin, icon occupies about 82% of canvas. No text besides M, no letters or words around it, no watermark, no Taio logo, no pen nib. Single icon viewed straight on.

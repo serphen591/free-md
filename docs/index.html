@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f0efff">
+  <meta name="description" content="免费版md：为 Mac 打造的本地 Markdown 工作台。实时预览、文本片段、实用动作，无需账户，离线可用。免费下载 macOS 通用版。">
+  <meta property="og:title" content="免费版md — 让文字，回到自己手中。">
+  <meta property="og:description" content="一款安静、轻巧的本地 Markdown 工作台。无需账户，无需订阅，断网也能写。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://serphen591.github.io/free-md/">
+  <meta property="og:image" content="https://serphen591.github.io/free-md/assets/app-icon.png">
+  <link rel="canonical" href="https://serphen591.github.io/free-md/">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>免费版md — 让文字，回到自己手中。</title>
+</head>
+<body>
+<a class="skip" href="#main">跳转到正文</a>
+<div class="top-wash" aria-hidden="true"></div>
+<header class="header">
+  <a class="brand" href="#" aria-label="免费版md 首页"><img src="assets/app-icon.png" alt="" width="30" height="30"><span>免费版md</span></a>
+  <nav aria-label="主导航"><a href="#features">功能</a><a href="#install">安装指南</a><a href="#questions">常见问题</a></nav>
+  <div class="header-actions"><a class="github-link" href="https://github.com/serphen591/free-md" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a class="button small primary" href="https://github.com/serphen591/free-md/releases/download/v1.0.1/FreeMD-1.0.1-universal.dmg">下载 <span aria-hidden="true">↓</span></a></div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-icon" src="assets/app-icon.png" alt="免费版md 图标：墨绿色底色上的纸页与 Markdown 标记" width="76" height="76">
+    <p class="eyebrow"><span class="status-dot"></span> 为 macOS 而生 · v1.0.1</p>
+    <h1 id="hero-title">让文字，回到自己手中。</h1>
+    <p class="hero-description">用免费版md，记录灵感、整理思路，把想法写成文章。<br class="desktop-break">一款安静的本地 Markdown 工作台。</p>
+    <div class="hero-actions"><a class="button primary" href="https://github.com/serphen591/free-md/releases/download/v1.0.1/FreeMD-1.0.1-universal.dmg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>下载 macOS 版</a><a class="button secondary" href="https://github.com/serphen591/free-md" target="_blank" rel="noopener">在 GitHub 查看 <span aria-hidden="true">↗</span></a></div>
+    <p class="system-note">macOS 12 及以上 · Apple Silicon & Intel · 约 8 MB</p>
+    <div class="promises" aria-label="应用特点"><span>本地文件</span><i aria-hidden="true"></i><span>离线可用</span><i aria-hidden="true"></i><span>无需账户</span><i aria-hidden="true"></i><span>免费使用</span></div>
+  </section>
+  <section class="showcase" aria-label="应用交互示意">
+    <div class="app-window">
+      <div class="window-chrome"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span><img src="assets/app-icon.png" alt="" width="14" height="14"> 免费版md</span><span class="chrome-end" aria-hidden="true">⌘</span></div>
+      <div class="app-layout">
+        <aside class="app-sidebar">
+          <div class="app-brand"><img src="assets/app-icon.png" width="32" height="32" alt=""><div><b>免费版md</b><small>让文字，回到自己手中。</small></div></div>
+          <div class="demo-tabs" role="tablist" aria-label="演示模式"><button role="tab" aria-selected="true" data-mode="files" id="tab-files" aria-controls="demo-list">文件</button><button role="tab" aria-selected="false" data-mode="snippets" id="tab-snippets" aria-controls="demo-list" tabindex="-1">片段</button><button role="tab" aria-selected="false" data-mode="actions" id="tab-actions" aria-controls="demo-list" tabindex="-1">动作</button></div>
+          <div class="demo-search" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span id="demo-search-label">自己的文字，随时找到</span></div>
+          <p class="sidebar-heading" id="sidebar-heading">已打开的文档</p>
+          <div id="demo-list" role="tabpanel" aria-labelledby="tab-files"></div>
+          <button class="restore-demo" id="restore-demo" hidden>↺ 恢复示例文档</button>
+          <div class="sidebar-local"><span class="status-dot"></span> 内容仅保存在这台 Mac</div>
+        </aside>
+        <div class="app-main">
+          <div class="document-toolbar"><div class="document-heading"><b id="demo-title">写作，从这里开始.md</b><small id="demo-subtitle">文稿 / 我的笔记</small></div><div class="view-switch" aria-label="切换演示视图"><button data-view="edit" aria-pressed="false">编辑</button><button class="selected" data-view="split" aria-pressed="true">双栏</button><button data-view="preview" aria-pressed="false">预览</button></div><span class="saved-indicator">已保存 <span aria-hidden="true">✓</span></span></div>
+          <div class="formatting" aria-hidden="true"><b>H</b><b>B</b><i>I</i><span>↗</span><span>&lt;/&gt;</span><span>☑</span><small>MARKDOWN</small></div>
+          <div class="document-body" data-view="split"><div class="source-pane" id="source-pane"></div><article class="preview-pane" id="preview-pane"></article><aside class="demo-outline"><span>文档大纲</span><div id="outline-items"></div></aside></div>
+          <div class="document-status"><span id="demo-status">写一点，想清楚一点。</span><span>UTF-8 <span aria-hidden="true">·</span> Markdown</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="demo-caption"><span>交互式界面示意</span><span id="demo-hint" aria-live="polite">试试切换文档，或将鼠标移到文档右侧关闭它。<span aria-hidden="true"> ↗</span></span></div>
+  </section>
+  <section class="features section" id="features">
+    <div class="section-intro"><p class="eyebrow">少一点打扰，多一点专注</p><h2>从一闪而过的灵感，<br>到值得留下的文字。</h2><p>打开文件，就可以开始。<br>把时间留给写作，把格式交给 Markdown。</p></div>
+    <div class="feature-list">
+      <div class="feature"><span class="feature-number">01</span><div><h3>写下想法，即刻看到。</h3><p>原生编辑器与实时预览并排呈现。表格、代码、数学公式与流程图，都能离线渲染。</p><div class="feature-foot"><kbd>⌘</kbd><kbd>B</kbd><span>让重点更清楚</span></div></div></div>
+      <div class="feature"><span class="feature-number">02</span><div><h3>把零散的文字，整理好。</h3><p>手动收藏剪贴板里的片段，用文本动作一键去重、排序、格式化 JSON。每一步，都可以撤销。</p><div class="feature-foot"><span class="mini-tag">片段收藏</span><span class="mini-tag">13 项文本动作</span></div></div></div>
+      <div class="feature"><span class="feature-number">03</span><div><h3>文件属于你，去留也由你。</h3><p>直接读写本地文件，支持 TextPack 导入和 HTML、PDF 导出。没有账户，也没有订阅。</p><div class="feature-foot file-types"><span>.md</span><span>.txt</span><span>.json</span><span>.textpack</span></div></div></div>
+    </div>
+  </section>
+  <section class="install-section section" id="install">
+    <div class="install-heading"><p class="eyebrow">从下载到写作，只需几步</p><h2>把它放进你的 Mac。</h2><p>一个安装包，同时支持 Apple Silicon 和 Intel。</p></div>
+    <ol class="install-steps"><li><span class="step-number">1</span><h3>下载安装包</h3><p>点击下载按钮，获取 macOS 通用版 DMG 文件。</p></li><li><span class="step-number">2</span><h3>拖入“应用程序”</h3><p>打开 DMG，将“免费版md”拖到 Applications 文件夹。</p></li><li><span class="step-number">3</span><h3>开始你的第一篇</h3><p>打开应用，按 <kbd>⌘</kbd><kbd>N</kbd> 新建文档，用 <kbd>⌘</kbd><kbd>S</kbd> 保存。</p></li></ol>
+    <div class="install-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg><div><b>首次打开前，请了解</b><p>当前版本尚未经过 Apple 公证。若 macOS 提示无法验证开发者，请确认来源可信后，前往“系统设置 → 隐私与安全性 → 仍要打开”。<a href="https://support.apple.com/zh-cn/102445" target="_blank" rel="noopener">查看 Apple 说明 ↗</a></p></div></div>
+  </section>
+  <section class="faq section" id="questions"><div><p class="eyebrow">关于免费版md</p><h2>你可能还想知道。</h2></div><div class="faq-list">
+    <details><summary>真的免费吗？需要注册吗？<span aria-hidden="true">+</span></summary><p>当前发布版本可以免费下载使用，无需注册、登录或购买订阅。源代码也已公开在 GitHub，方便查看实现与提交反馈。</p></details>
+    <details><summary>文档会被上传到服务器吗？<span aria-hidden="true">+</span></summary><p>应用在本机读写文档，草稿和片段也保存在本机。编辑与预览不需要网络，远程图片默认不加载。你主动打开外部链接时，会通过系统浏览器访问对应网站。</p></details>
+    <details><summary>可以替代 Taio 打开我的 Markdown 吗？<span aria-hidden="true">+</span></summary><p>可以。在访达中选中一个 Markdown 文件，打开“显示简介”，将“打开方式”改为“免费版md”，再点“全部更改”。安装包不会自动更改其他电脑的默认应用。</p></details>
+    <details><summary>有哪些暂时不支持的功能？<span aria-hidden="true">+</span></summary><p>这是独立实现的本地功能版，不包含 iCloud 同步、Taio / JSBox 脚本运行或系统小组件。支持查看和编辑 .taioactions JSON，但不执行其中的动作。普通文本文件上限为 20 MB。</p></details>
+    <details><summary>这次更新带来了什么？<span aria-hidden="true">+</span></summary><p>v1.0.1 新增侧栏文档悬浮关闭按钮。将鼠标移到文档行上，点击右侧“×”即可关闭该文档；未保存的内容仍会出现保存提示。关闭后台文档时，会保留你当前正在编辑的文档。</p></details>
+  </div></section>
+  <section class="final-cta"><img src="assets/app-icon.png" alt="" width="60" height="60"><h2>写下下一件，<br class="mobile-break">值得记录的事。</h2><a class="button primary" href="https://github.com/serphen591/free-md/releases/download/v1.0.1/FreeMD-1.0.1-universal.dmg">免费下载 macOS 版 <span aria-hidden="true">↓</span></a><p>v1.0.1 · 本地写作，无需账户。</p></section>
+</main>
+<footer><a class="brand" href="#"><img src="assets/app-icon.png" alt="" width="24" height="24"><span>免费版md</span></a><p>一款独立开发的本地 Markdown 工作台。</p><div><a href="https://github.com/serphen591/free-md/releases/tag/v1.0.1" target="_blank" rel="noopener">更新日志</a><a href="https://github.com/serphen591/free-md/issues" target="_blank" rel="noopener">反馈问题 ↗</a><a href="https://github.com/serphen591/free-md/releases/download/v1.0.1/SHA256SUMS.txt">文件校验</a></div></footer>
+<script src="app.js"></script>
+</body></html>

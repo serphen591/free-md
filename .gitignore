@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+build/
+release/
+Resources/vendor/
+Resources/ThirdPartyLicenses.txt
+# Local machine migration and verification tools are not part of the app.
+scripts/*
+!scripts/build.sh
+!scripts/package.sh
+!scripts/bundle.mjs
